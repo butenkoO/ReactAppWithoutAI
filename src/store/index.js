@@ -2,12 +2,12 @@ import { configureStore  } from '@reduxjs/toolkit';
 
 const ADD_DATA = 'ADD_DATA';
 
-export const preloadedState = {
+export const preloadedState = Object.freeze({
     firstName: '',
     lastName: '',
     email: '',
-    message: ''
-};
+    message: '',
+});
 
 const reducer = (state = preloadedState, action) => {
     switch(action.type){
