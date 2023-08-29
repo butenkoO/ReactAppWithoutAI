@@ -1,10 +1,10 @@
 export const Table = ({ data }) => {
     return (
-        <div className="mt20">
+        <div className="mt20" data-testid='table-component'>
             {
                 Object.values(data).some((item) => item)
                     ? (
-                        <table>
+                        <table data-testid='table'>
                             <thead>
                                 <tr>
                                     <th>First name</th>

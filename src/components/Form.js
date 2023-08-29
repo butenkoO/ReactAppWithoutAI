@@ -19,11 +19,11 @@ export const Form = ({ onSubmit }) => {
         onSubmit(data);
         setData(preloadedState);
         setError(preloadedState);
-        alert('Data successfully added to the storage');
+        console.log('Data successfully added to the storage');
     }, [data, onSubmit]);
 
     return (
-        <div>
+        <div data-testid='form-component'>
             <Item label='First name' id='firstName' value={data.firstName} onChange={handleChange} />
             <Item label='Last name' id='lastName' value={data.lastName} onChange={handleChange} />
             <Item label='Email' id='email' value={data.email} onChange={handleChange} />

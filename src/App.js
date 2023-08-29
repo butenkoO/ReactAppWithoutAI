@@ -13,7 +13,7 @@ function App() {
   }, []);
 
   return (
-      <div className='center'>
+      <div className='center' data-testid='app-component'>
         <Form onSubmit={handleOnSubmit} />
         <Table data={data} />
       </div>
